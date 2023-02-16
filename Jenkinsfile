@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'g++ -o cs104 cs104.cpp'
-     
+        build job: 'PES1UG20CS104_BHUMIKA-1'
         echo "BUILD successful"
       }
     }
@@ -17,7 +17,6 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-     
         echo "DEPLOY successful"
       }
     }
